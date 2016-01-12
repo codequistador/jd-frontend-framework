@@ -1,0 +1,76 @@
+// background vars
+$backgroundColor: #ffffff; 														
+
+// font vars
+$fontSize: 14px; 																
+$fontFamily: 'Open Sans', sans-serif;
+$fontColor: #58595b;
+
+// color vars													
+
+$yellow: #ffdf5d;
+
+// form vars
+$formFont: $fontFamily; 														
+
+// link vars
+$linkColor: #000;																
+$linkHoverColor: #000;															
+$linkDecoration: underline;														
+
+// heading vars
+$headingFamily: $fontFamily;							
+$headingColor: #000000;															
+
+// grid variables
+$rowMaxWidth: 		1410px;													
+$baseColWidth: 		40px;														
+$baseGutterWidth:	20px;														
+$isFluid: 			false;														
+
+// ------ DONT CHANGE THIS
+$baseColCount: 		12;															
+
+// media query dimensions
+$tabletWidth: 			768px;
+$mobilePortraitWidth: 	300px;
+$mobileLandscapeWidth: 	420px;
+
+// Mobile Nav vars
+// colors
+
+$color-1: #dbe2e9; // blue light
+$color-2: #89ba2c; // green
+$color-3: #424f5c; // blue dark
+$color-4: #ffffff; // white
+
+// fonts 
+
+$primary-font: $fontFamily;
+$secondary-font: $fontFamily;
+
+// panel size
+
+$panel-width-S: 100%;
+$panel-width-M: 100%;
+$panel-width-L: 100%;
+
+// breakpoints
+   
+$S:     480px;   
+$M:     768px;     
+$L:     1000px;     
+
+// media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $S) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $L) { @content; } 
+  }
+}
